@@ -10,11 +10,12 @@
 
 <body>
     <div class="box row col-gap-4">
-        <div class="player-1-container row row-gap-9">
+        <div class="player-1-container row row-gap-4">
             <div class="global-score">
                 <p class="player-1">Player 1 <span class="active"></span></p>
                 <p class="player-1-score">0</p>
             </div>
+            <p class="winner" id="win1">Winner</p>
             <div class="local-score">
                 <p class="current">Current</p>
                 <p class="player-1-current-score">0</p>
@@ -23,18 +24,19 @@
 
         <div class="buttons">
             <button class="new-game">New Game</button>
-            <img src="image/dice-1.png" alt="" class="dice-img">
+                <img src="image/dice-0.png" alt="" class="dice-img">
             <div class="roll-hold">
                 <button class="roll-dice">Roll Dice</button><br>
                 <button class="hold">Hold</button>
             </div>
         </div>
 
-        <div class="player-2-container row row-gap-9">
+        <div class="player-2-container row row-gap-4">
             <div class="global-score">
                 <p class="player-2">Player 2 <span class="active"></span></p>
                 <p class="player-2-score">0</p>
             </div>
+            <p class="winner" id="win2">Winner</p>
             <div class="local-score">
                 <p class="current">Current</p>
                 <p class="player-2-current-score">0</p>
