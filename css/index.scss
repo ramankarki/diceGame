@@ -1,6 +1,7 @@
 $medium-text: 1.6rem;
 $large-text: 2.5rem;
 $grey: rgb(100, 100, 100);
+$light-grey: rgb(150, 150, 150);
 $red: rgb(255, 115, 115);
 $green: rgb(53, 197, 53);
 
@@ -46,7 +47,7 @@ body {
 .box {
     max-width: 900px;
     padding: 5rem;
-    background-image: linear-gradient(90deg, rgb(245, 245, 245) 50%, white 50%);
+    background-image: linear-gradient(90deg, rgb(243, 243, 243) 50%, white 50%);
     box-shadow: 0 5px 25px -15px black;
 }
 
@@ -63,7 +64,7 @@ body {
 
 .player {
     margin-bottom: 2rem;
-    color: $grey;
+    color: $light-grey;
 }
 
 .player-score {
