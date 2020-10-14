@@ -48,45 +48,29 @@ body {
 .box {
   max-width: 900px;
   padding: 5rem;
-  background-image: -webkit-gradient(linear, left top, right top, color-stop(50%, #fafafa), color-stop(50%, white));
-  background-image: linear-gradient(90deg, #fafafa 50%, white 50%);
+  background-image: -webkit-gradient(linear, left top, right top, color-stop(50%, whitesmoke), color-stop(50%, white));
+  background-image: linear-gradient(90deg, whitesmoke 50%, white 50%);
   -webkit-box-shadow: 0 5px 25px -15px black;
           box-shadow: 0 5px 25px -15px black;
 }
 
-.player-1-container,
 .buttons,
-.player-2-container {
+.player-container {
   grid-column: span 4;
   text-align: center;
 }
 
-.player-1,
-.player-2,
-.player-1-score,
-.player-2-score {
+.player,
+.player-score {
   font-size: 2.5rem;
 }
 
-.new-game,
-.roll-dice,
-.hold {
-  font-size: 1.6rem;
-  color: #646464;
-}
-
-.new-game {
-  color: #ff7373;
-}
-
-.player-1,
-.player-2 {
+.player {
   margin-bottom: 2rem;
   color: #646464;
 }
 
-.player-1-score,
-.player-2-score {
+.player-score {
   color: #ff7373;
 }
 
@@ -97,8 +81,7 @@ body {
   border-radius: .3rem;
 }
 
-.local-score .player-1-current-score,
-.local-score .player-2-current-score {
+.local-score .player-current-score {
   font-size: 1.6rem;
 }
 
@@ -106,8 +89,7 @@ body {
   margin-bottom: 1rem;
 }
 
-.player-1 .active,
-.player-2 .active {
+.player .active {
   background-color: #e6e6e6;
   padding: .4rem;
   display: inline-block;
@@ -137,6 +119,22 @@ body {
       align-content: space-between;
 }
 
+.buttons button {
+  font-size: 1.6rem;
+  color: #646464;
+  border: none;
+  background-color: rgba(255, 255, 255, 0);
+  cursor: pointer;
+  -webkit-transition: 300ms ease;
+  transition: 300ms ease;
+}
+
+.buttons button:hover {
+  color: #ff7373;
+  -webkit-transition: 300ms ease;
+  transition: 300ms ease;
+}
+
 .dice-img {
   width: 150px;
   height: auto;
@@ -147,25 +145,11 @@ body {
   border-radius: .5rem;
 }
 
-.roll-dice {
+.roll-dice-button {
   margin-bottom: 2rem;
 }
 
-.new-game,
-.roll-dice,
-.hold {
-  border: none;
-  background-color: rgba(255, 255, 255, 0);
-  cursor: pointer;
-  -webkit-transition: 300ms ease;
-  transition: 300ms ease;
-}
-
-.new-game:hover,
-.roll-dice:hover,
-.hold:hover {
+.buttons .new-game-button {
   color: #ff7373;
-  -webkit-transition: 300ms ease;
-  transition: 300ms ease;
 }
 /*# sourceMappingURL=index.css.map */

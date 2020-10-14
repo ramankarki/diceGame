@@ -46,43 +46,27 @@ body {
 .box {
     max-width: 900px;
     padding: 5rem;
-    background-image: linear-gradient(90deg, rgb(250, 250, 250) 50%, white 50%);
+    background-image: linear-gradient(90deg, rgb(245, 245, 245) 50%, white 50%);
     box-shadow: 0 5px 25px -15px black;
 }
 
-.player-1-container,
 .buttons,
-.player-2-container {
+.player-container {
     grid-column: span 4;
     text-align: center;
 }
 
-.player-1,
-.player-2,
-.player-1-score,
-.player-2-score {
+.player,
+.player-score {
     font-size: $large-text;
 }
 
-.new-game,
-.roll-dice,
-.hold {
-    font-size: $medium-text;
-    color: $grey;
-}
-
-.new-game {
-    color: $red;
-}
-
-.player-1,
-.player-2 {
+.player {
     margin-bottom: 2rem;
     color: $grey;
 }
 
-.player-1-score,
-.player-2-score {
+.player-score {
     color: $red;
 }
 
@@ -92,8 +76,7 @@ body {
     color: white;
     border-radius: .3rem;
 
-    .player-1-current-score,
-    .player-2-current-score {
+    .player-current-score {
         font-size: $medium-text;
     }
 }
@@ -102,8 +85,7 @@ body {
     margin-bottom: 1rem;
 }
 
-.player-1 .active,
-.player-2 .active {
+.player .active {
     background-color: rgb(230, 230, 230);
     padding: .4rem;
     display: inline-block;
@@ -125,6 +107,20 @@ body {
     align-content: space-between;
 }
 
+.buttons button {
+    font-size: $medium-text;
+    color: $grey;
+    border: none;
+    background-color: rgba(255, 255, 255, 0);
+    cursor: pointer;
+    transition: 300ms ease;
+}
+
+.buttons button:hover {
+    color: $red;
+    transition: 300ms ease;
+}
+
 .dice-img {
     width: 150px;
     height: auto;
@@ -134,22 +130,10 @@ body {
     border-radius: .5rem;
 }
 
-.roll-dice {
+.roll-dice-button {
     margin-bottom: 2rem;
 }
 
-.new-game,
-.roll-dice,
-.hold {
-    border: none;
-    background-color: rgba(255, 255, 255, 0);
-    cursor: pointer;
-    transition: 300ms ease;
-}
-
-.new-game:hover,
-.roll-dice:hover,
-.hold:hover {
+.buttons .new-game-button {
     color: $red;
-    transition: 300ms ease;
 }
